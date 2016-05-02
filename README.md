@@ -1,3 +1,3 @@
 # Codes and datasets for DMR paper
 
-This branch contains edits and  sub-final codes to the master branch
+Goal is to compile the data and code used to generate figures to allow reproducible research
