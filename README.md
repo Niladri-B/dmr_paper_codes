@@ -1,3 +1,5 @@
-# Codes and datasets for DMR paper
+# Codes for DMR paper
 
-This branch contains the sub-codes and sem-final versions of data and everything else
+Contained in this repository are the final codes used to produce the figures in the manuscript.
+It is hoped that this will aid in the reproducibility and transparency of the research analysis performed. 
+
