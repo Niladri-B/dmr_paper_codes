@@ -1,14 +1,13 @@
 #Figure3
-#Human DMR without MHC
-#Neanderthal and Denisovan with MHC,
+# Human vs Neanderthal vs Denisovan DMRs
 source('~/Downloads/fancy_qq_plot2.R')
 
 #GWAS Genomic Corrections
-chisq <- qchisq(scz.gwas.mhcmasked$V4, 1, lower.tail=FALSE )#gwas$p
-scz.lambda <- median( chisq, na.rm=TRUE )/0.454#qchisq(0.5,1)#
-scz.lambda ##global.lambda
-scz.gwas.mhcmasked$p.corr<- pchisq( chisq/scz.lambda, 1, lower.tail=FALSE ) ##corrected by global lambda 
-rm(chisq)
+# chisq <- qchisq(scz.gwas.mhcmasked$V4, 1, lower.tail=FALSE )#gwas$p
+# scz.lambda <- median( chisq, na.rm=TRUE )/0.454#qchisq(0.5,1)#
+# scz.lambda ##global.lambda
+# scz.gwas.mhcmasked$p.corr<- pchisq( chisq/scz.lambda, 1, lower.tail=FALSE ) ##corrected by global lambda 
+# rm(chisq)
 
 chisq <- qchisq(scz.gwas.full$p, 1, lower.tail=FALSE )#gwas$p
 scz.lambda.full <- median( chisq, na.rm=TRUE )/0.454#qchisq(0.5,1)#
