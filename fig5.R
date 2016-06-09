@@ -1,6 +1,8 @@
+#Figure 5
+#INRICH heatmap results
 
 load('~/Downloads/heatmaps_in_R.Rdata')  
-library(gplots)
+ library(gplots)
 
 break.pairs <- c(seq(0.003, 0.099, length.out=50),seq(0.1, 1,length.out=50))
 #mycol <- colorpanel(n=99,low="navy",mid="deepskyblue3",high="aliceblue")
@@ -14,7 +16,7 @@ lmat <- rbind(c(0,4), c(2,1), c(0,3))  #Format plot area into 3x2 matrix i.e 3 r
 lhei <- c(0.76,4,1.5) #1st number is Key, 2nd is Heatmap, 3rd is Coln. Dendogram
 lwid <- c(1,4) #1st is Row Dendograms, 2nd is Key + Heatmap + Coln Dendograms
 
-heatmap.2(correctedpvals_matrix, breaks=break.pairs, col=mycol, density.info = "none", trace = "none", dendrogram = "none", Rowv = "none", Colv = "none",
+heatmap.2(emppvals_matrix_wout.D.N, breaks=break.pairs, col=mycol, density.info = "none", trace = "none", dendrogram = "none", Rowv = "none", Colv = "none",
           key.xlab = 'Corrected P-values', key = T, lmat = lmat, lhei = lhei, lwid = lwid, key.title = NA, srtCol=315, adjCol = c(0,1),
           key.xtickfun=function() {
                 cex <- par("cex")*par("cex.axis")
